@@ -1,0 +1,7 @@
+website:
+  uri: "https://api.github.com"
+ssm:
+  host: "192.168.42.128"
+  login:
+    username: "root"
+    password: "toor"

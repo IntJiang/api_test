@@ -1,0 +1,883 @@
+id,uri,method,params,data_type,body,code,log
+InputValidation-DashboardSecuritySituation-asset-Positive,/admin/dashboard/security_situation/asset,get,"period:day
+startDate:2023-12-01
+endDate:2023-12-12",,,200,
+InputValidation-DashboardSecuritySituation-asset-Negative,/admin/dashboard/security_situation/asset,get,"period:day
+startDate:2023-11-01
+endDate:2023-11-211",,,200,SSM_SERVER_GATEWAY_DASHBOARD_SECURITY_SITUATION_MSG_3
+InputValidation-DashboardSecuritySituation-risk-Positive,/admin/dashboard/security_situation/risk,get,"period:day
+startDate:2023-10-01
+endDate:2023-10-03",,,200,
+InputValidation-DashboardSecuritySituation-risk-Negative,/admin/dashboard/security_situation/risk,get,"period:day
+startDate:2023-10-01
+endDate:2023-10",,,200,SSM_SERVER_GATEWAY_DASHBOARD_SECURITY_SITUATION_MSG_2
+InputValidation-DashboardSecuritySituation-networkLoad-Positive,/admin/dashboard/security_situation/networkLoad,get,"period:hour
+sensor:A6060600FFFBEBBF1FYHFR3
+startDate:2023-11-12
+endDate:2023-11-22",,,200,
+InputValidation-DashboardSecuritySituation-networkLoad-Negative,/admin/dashboard/security_situation/networkLoad,get,"period:hour
+sensor:A6060600FFFBEBBF1FYHFR3!
+startDate:2023-11-12
+endDate:2023-11-22",,,200,SSM_SERVER_GATEWAY_DASHBOARD_SECURITY_SITUATION_MSG_8
+InputValidation-DashboardSecuritySituation-operation-Positive,/admin/dashboard/security_situation/operation,get,"period:day
+startDate:2023-10-12
+endDate:2023-11-22",,,200,
+InputValidation-DashboardSecuritySituation-operation-Negative,/admin/dashboard/security_situation/operation,get,"period:day
+startDate:2023-10-12!
+endDate:2023-11-22?",,,200,SSM_SERVER_GATEWAY_DASHBOARD_SECURITY_SITUATION_MSG_6
+InputValidation-DashboardSecuritySituation-vulnerability-Positive,/admin/dashboard/security_situation/vulnerability,get,"period:day
+startDate:2023-10-01
+endDate:2023-11-12",,,200,
+InputValidation-DashboardSecuritySituation-vulnerability-Negative,/admin/dashboard/security_situation/vulnerability,get,"period:day
+startDate:2023-10-01
+endDate:202s3-11-12?",,,200,SSM_SERVER_GATEWAY_DASHBOARD_SECURITY_SITUATION_MSG_4
+InputValidation-DashboardSecuritySituation-application-Positive,/admin/dashboard/security_situation/application,get,"period:day
+startDate:2023-11-05
+endDate:2023-11-22",,,200,
+InputValidation-DashboardSecuritySituation-application-Negative,/admin/dashboard/security_situation/application,get,"period:day
+startDate:2023-11-05
+endDate:2023-1-22",,,200,SSM_SERVER_GATEWAY_DASHBOARD_SECURITY_SITUATION_MSG_5
+InputValidation-DashboardSecuritySituation-account-Positive,/admin/dashboard/security_situation/account,get,"period:day
+startDate:2023-11-01
+endDate:2023-11-22",,,200,
+InputValidation-DashboardSecuritySituation-account-Negative,/admin/dashboard/security_situation/account,get,"period:day
+startDate:2023-11-01
+endDate:2023-11",,,200,SSM_SERVER_GATEWAY_DASHBOARD_SECURITY_SITUATION_MSG_7
+InputValidation-DashboardAssetFrame-index-Positive,/admin/dashboard/asset_frame,get,tab:1,,,200,
+InputValidation-DashboardAssetFrame-index-Negative,/admin/dashboard/asset_frame,get,tab:3,,,200,SSM_SERVER_GATEWAY_ASSET_MSG_FRAME_1
+InputValidation-Asset-inventory-Positive,/cyberseer/asset/inventory,get,"showOnline: on
+pageNumber:0
+pageSize:0
+sortName: 
+sortOrder: 
+searchText:10",,,200,
+InputValidation-Asset-inventory-Negative,/cyberseer/asset/inventory,get,"showOnline: on
+pageNumber:-1
+pageSize:0
+sortName: 
+sortOrder: 
+searchText:10",,,500,SSM_SERVER_GATEWAY_ASSET_MSG_INVENTORY
+InputValidation-ChangeList-findAssetChangeInfo-Positive,/cyberseer/changeList/findAssetChangeInfo,get,"time:1697436524329
+mac:08:5B:0E:25:A5:5E",,,200,
+InputValidation-ChangeList-findAssetChangeInfo-Negative,/cyberseer/changeList/findAssetChangeInfo,get,"time:1697436524329
+mac:08:5B:0E:25:A5:5E:8E",,,200,SSM_SERVER_GATEWAY_DASHBOARD_NETWORK_TOPOLOGY_MSG_7
+InputValidation-Topology-updateTopoLinks-Positive,/cyberseer/topo/updateTopoLinks,post,,json,"{""sensorId"":""A6060600FFFBEBBF1FYHFR3"",""topoId"":293187184425472,""vlan"":null,""links"":[{""srcId"":293141074471424,""dstId"":293139742644736,""origin"":""MANUAL"",""dst"":""B4:96:91:B2:CF:43"",""dstPort"":"""",""sensor"":{""name"":""10.11.60.246"",""id"":""A6060600FFFBEBBF1FYHFR3""},""src"":""D4:2C:44:FB:FD:E5"",""srcPort"":"""",""vlan"":null},{""srcId"":293191833102848,""dstId"":293139742644736,""origin"":""MANUAL"",""dst"":""B4:96:91:B2:CF:43"",""dstPort"":"""",""sensor"":{""name"":""10.11.60.246"",""id"":""A6060600FFFBEBBF1FYHFR3""},""src"":""6C:3C:8C:2D:D7:BA"",""srcPort"":"""",""vlan"":null}]}",500,
+InputValidation-Topology-updateTopoLinks-Negative,/cyberseer/topo/updateTopoLinks,post,,json,"{""sensorId"":""A6060600FFFBEBBF1FYHFR3"",""topoId"":293187184425472,""vlan"":null,""links"":[{""srcId"":293141074471424,""dstId"":293139742644736,""origin"":""MANUAL"",""dst"":""B4:96:91:B2:CF:43"",""dstPort"":"""",""sensor"":{""name"":""10.11.60.246"",""id"":""A6060600FFFBEBBF1FYHFR3""},""src"":""D4:2C:44:FB:FD:E5"",""srcPort"":"""",""vlan"":null},{""srcId"":293191833102848,""dstId"":293139742644736,""origin"":""MANUAL"",""dst"":""B4:96:91:B2:CF:43"",""dstPort"":"""",""sensor"":{""name"":null,""id"":""A6060600FFFBEBBF1FYHFR3""},""src"":""6C:3C:8C:2D:D7:BA"",""srcPort"":"""",""vlan"":null}]}",200,SSM_SERVER_GATEWAY_DASHBOARD_NETWORK_TOPOLOGY_MSG_1
+InputValidation-Topology-findByVlanAndSensor-Positive,/cyberseer/topo/findByVlanAndSensor,get,"time:1697435419428
+containOffline:true
+sensor:-1",,,200,
+InputValidation-Topology-findByVlanAndSensor-Negative,/cyberseer/topo/findByVlanAndSensor,get,"time:1697435419428
+containOffline:true
+sensor:1@",,,200,SSM_SERVER_GATEWAY_DASHBOARD_NETWORK_TOPOLOGY_MSG_4
+InputValidation-Topology-updateTopoNode-Positive,/cyberseer/topo/updateTopoNode,post,,json,"{""id"":319502281239040,""nodes"":[{""nodeId"":319496849207808,""x"":1156.1732542806162,""y"":-211.7354360421025}],""sensor"":""E4060300FFFB8B0FVMware420f22019c88df97c417e241124f543c"",""topoId"":319500708303360,""vlan"":null}",200,
+InputValidation-Topology-updateTopoNode-Negative,/cyberseer/topo/updateTopoNode,post,,json,"{""id"":319502281239040,""nodes"":[{""nodeId"":null,""x"":1156.1732542806162,""y"":-211.7354360421025}],""sensor"":""E4060300FFFB8B0FVMware420f22019c88df97c417e241124f543c"",""topoId"":319500708303360,""vlan"":null}",200,SSM_SERVER_GATEWAY_DASHBOARD_NETWORK_TOPOLOGY_MSG_6
+InputValidation-DashboardNetworkTopology-networkLoad-Positive,/admin/dashboard/topology/networkLoad,get,"period:second
+sensor:72060900FFFBEBBFHVZSFV3",,,200,
+InputValidation-DashboardNetworkTopology-networkLoad-Negative,/admin/dashboard/topology/networkLoad,get,"period:second
+sensor:72060900FFFBE%26BBFHVZSFV3",,,200,SSM_SERVER_GATEWAY_DASHBOARD_NETWORK_TOPOLOGY_MSG_8
+InputValidation-DashboardNetworkAppflow-findAppflowByNode-Positive,/admin/dashboard/app-flow/findByNode,post,,json,{"target":["172.30.1.104"]},200,
+InputValidation-DashboardNetworkAppflow-findAppflowByNode-Negative,/admin/dashboard/app-flow/findByNode,post,,json,{"target":null},200,SSM_SERVER_GATEWAY_NETWORK_COMMUNICATION_LINKS_MSG_1
+InputValidation-DashboardNetworkAppflow-findAppflowBySourceAndTarget-Positive,/admin/dashboard/app-flow/findBySourceAndTarget,post,,json,"{""source"":[""172.30.1.104""],""target"":[""172.30.1.130""]}",200,
+InputValidation-DashboardNetworkAppflow-findAppflowBySourceAndTarget-Negative,/admin/dashboard/app-flow/findBySourceAndTarget,post,,json,"{""source"":null,""target"":[""172.30.1.130""]}",200,SSM_SERVER_GATEWAY_NETWORK_COMMUNICATION_LINKS_MSG_2
+InputValidation-Asset-index-Positive,/cyberseer/asset/index,get,"pageNumber:0
+pageSize:0
+totalPage:5
+sortName:
+sortOrder:
+vulnerabilitiesClick:true
+searchText:249",,,200,
+InputValidation-Asset-index-Negative,/cyberseer/asset/index,get,"pageNumber:0
+pageSize:0
+totalPage:5
+sortName:
+sortOrder:
+vulnerabilitiesClick:true
+searchText:1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456",,,200,SSM_SERVER_GATEWAY_ASSET_MSG_BASIC_SEARCH
+InputValidation-Asset-advancedSearch-Positive,/cyberseer/asset/advance-search,post,,form,"params: {""pageNumber"":0,""pageSize"":""0"",""sortName"":"""",""sortOrder"":"""",""searchParams"":[{""deleteId"":""54a8e958-6231-4667-e129-b0241def0983"",""fieldName"":""ip"",""showName"":""IP address"",""operator"":""is"",""operatorLabel"":""is not"",""value"":""10.11.0.214"",""showText"":""IP address is 10.11.0.214""}]}",200,
+InputValidation-Asset-advancedSearch-Negative,/cyberseer/asset/advance-search,post,,form,"params: {""pageNumber"":-1,""pageSize"":""0"",""sortName"":"""",""sortOrder"":"""",""searchParams"":[{""deleteId"":""54a8e958-6231-4667-e129-b0241def0983"",""fieldName"":""ip"",""showName"":""IP address"",""operator"":""is"",""operatorLabel"":""is not"",""value"":""10.11.0.214"",""showText"":""IP address is 10.11.0.214""}]}",200,SSM_SERVER_GATEWAY_ASSET_MSG_ADVANCE_SEARCH
+InputValidation-Asset-download-Positive,/cyberseer/asset/downloadExcel,get,"pageNumber:0
+pageSize:0
+totalPage:5
+sortName:
+sortOrder:
+vulnerabilitiesClick:true
+searchText:",,,200,
+InputValidation-Asset-download-Negative,/cyberseer/asset/downloadExcel,get,"pageNumber:0
+pageSize:0
+totalPage:5
+sortName:
+sortOrder:
+vulnerabilitiesClick:true
+searchText:1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456",,,200,SSM_SERVER_GATEWAY_ASSET_MSG_DOWNLOAD_EXCEL
+InputValidation-Asset-asDownload-Positive,/cyberseer/asset/asDownloadExcel,post,,form,"params: {""pageNumber"":0,""pageSize"":""0"",""sortName"":"""",""sortOrder"":"""",""searchParams"":[{""deleteId"":""cc076294-7946-8821-1f52-89d4255df197"",""fieldName"":""ip"",""showName"":""IP address"",""operator"":""is"",""operatorLabel"":""is"",""value"":""172.30.1.100"",""showText"":""IP address is 172.30.1.100""}]}",200,
+InputValidation-Asset-asDownload-Negative,/cyberseer/asset/asDownloadExcel,post,,form,"params: {""pageNumber"":0,""pageSize"":""-1"",""sortName"":"""",""sortOrder"":"""",""searchParams"":[{""deleteId"":""cc076294-7946-8821-1f52-89d4255df197"",""fieldName"":""ip"",""showName"":""IP address"",""operator"":""is"",""operatorLabel"":""is"",""value"":""172.30.1.100"",""showText"":""IP address is 172.30.1.100""}]}",200,SSM_SERVER_GATEWAY_ASSET_MSG_ADVANCE_SEARCH_DOWNLOAD_EXCEL
+InputValidation-Asset-updateDomain-Positive,/cyberseer/asset/updateDomain,post,,json,"[{""id"": 23,""domain"": ""zjiang test""}]",200,
+InputValidation-Asset-updateDomain-Negative,/cyberseer/asset/updateDomain,post,,json,"[{""id"": 23,""domain"":""1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456""}]",200,SSM_SERVER_GATEWAY_ASSET_MSG_UPDATE_DOMAIN
+InputValidation-Asset-save-Positive,/cyberseer/asset/save,post,,form,"id: 
+pageNumber: 0
+pageSize: 0
+edit: false
+hardware[0].hardwareDetail.family:
+hardware[0].hardwareDetail.model: 
+hardware[0].hardwareDetail.firmwareVersion: 
+hardware[0].hardwareDetail.interfaceInfos[0].ipv4: 10.11.0.80
+hardware[0].hardwareDetail.interfaceInfos[0].mac: A1:B2:C3:D4:E5:F6
+hardware[0].hardwareDetail.interfaceInfos[0].vlan: 1
+name: zjiang test
+alias: 
+manufacturer: 
+sensor: 
+subUseAs: HMI
+useAs: Supervisory Control
+owner: 
+description: 
+significance: CRITICAL
+location: 
+whitelist: N
+provider:",200,
+InputValidation-Asset-save-Negative,/cyberseer/asset/save,post,,form,"id: 
+pageNumber: 0
+pageSize: 0
+edit: false
+hardware[0].hardwareDetail.family:
+hardware[0].hardwareDetail.model: 
+hardware[0].hardwareDetail.firmwareVersion: 
+hardware[0].hardwareDetail.interfaceInfos[0].ipv4: 10.11.0.8a
+hardware[0].hardwareDetail.interfaceInfos[0].mac: A1:B2:C3:D4:E5:F6
+hardware[0].hardwareDetail.interfaceInfos[0].vlan: 1
+name: zjiang test
+alias: 
+manufacturer: 
+sensor: 
+subUseAs: HMI
+useAs: Supervisory Control
+owner: 
+description: 
+significance: CRITICAL
+location: 
+whitelist: N
+provider:",200,SSM_SERVER_GATEWAY_ASSET_MSG_ASSET_SAVE
+InputValidation-Asset-delete-Positive,/cyberseer/asset/deleteByIds,post,,form,"ids: 286787317174784
+pageNumber: 0
+pageSize: 0",200,
+InputValidation-Asset-delete-Negative,/cyberseer/asset/deleteByIds,post,,form,"ids: 28678731^7174784
+pageNumber: 0
+pageSize: 0",200,SSM_SERVER_GATEWAY_ASSET_MSG_ASSET_DELETE
+InputValidation-Asset-findById-Positive,/cyberseer/asset/form,get,id:286619804303872,,,200,
+InputValidation-Asset-findById-Negative,/cyberseer/asset/form,get,id:-286619804303872,,,500,SSM_SERVER_GATEWAY_ASSET_MSG_ASSET_DETAILS
+InputValidation-Asset-getFormById-Positive,/cyberseer/asset/operationForm,get,"id:286619804303872
+pageNumber:0
+pageSize:0
+edit:true",,,200,
+InputValidation-Asset-getFormById-Negative,/cyberseer/asset/operationForm,get,"id:-286619804303872
+pageNumber:0
+pageSize:0
+edit:true",,,200,SSM_SERVER_GATEWAY_ASSET_MSG_ASSET_OPERATION
+InputValidation-Asset-showInTopo-Positive,/cyberseer/asset/display,post,"ids:286619804303872
+pageNumber:
+pageSize:",,,200,
+InputValidation-Asset-showInTopo-Negative,/cyberseer/asset/display,post,"ids:2866198@04303872
+pageNumber:
+pageSize:",,,200,SSM_SERVER_GATEWAY_ASSET_MSG_ASSET_DISPLAY
+InputValidation-Asset-mergeAsset-Positive,/cyberseer/asset/merge,post,"ids: 290835282366976,286787455220224
+pageNumber: 
+pageSize: ",,,200,
+InputValidation-Asset-mergeAsset-Negative,/cyberseer/asset/merge,post,"ids: 290835282366976%26286787455220224
+pageNumber: 
+pageSize: ",,,200,SSM_SERVER_GATEWAY_ASSET_MSG_ASSET_MERGE
+InputValidation-Asset-changeZone-Positive,/cyberseer/asset/changeZone,get,useAs:Undefined,,,200,
+InputValidation-Asset-changeZone-Negative,/cyberseer/asset/changeZone,get,useAs:1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456,,,200,SSM_SERVER_GATEWAY_ASSET_MSG_ASSET_CHANGE_ZONE
+InputValidation-Account-index-Positive,/cyberseer/account/index,get,"pageNumber:0
+pageSize:0",,,200,
+InputValidation-Account-index-Negative,/cyberseer/account/index,get,"pageNumber:-1
+pageSize:0",,,500,SSM_SERVER_GATEWAY_ASSETS_ACCOUNTS_MSG_1
+InputValidation-Account-details-Positive,/cyberseer/account/details,get,hostKey:286076067305984,,,200,
+InputValidation-Account-details-Negative,/cyberseer/account/details,get,hostKey:2860760s67305984,,,200,SSM_SERVER_GATEWAY_ASSETS_ACCOUNTS_MSG_2
+InputValidation-SecurityEventManage-handling-Positive,/admin/event/manage/security/handling,get,"eventId:293354061253120
+moveAction:
+period:day
+mStartDate:2023-10-24
+mEndDate:2023-11-23
+innerStartDate:2023-10-24T00%3A00%3A00.000Z
+innerEndDate:2023-11-23T23%3A59%3A59.999Z
+pageSize:25
+pageNumber:0
+sortName:
+sortOrder:
+advancedChartParams:
+eventTypes:others
+eventTypes:alert
+eventTypes:warning
+eventSources:all
+mstatus:-1
+datasource:-1
+targetEventId:-1
+searchText:",,,500,
+InputValidation-SecurityEventManage-handling-Negative,/admin/event/manage/security/handling,get,"eventId:293354g061253120
+moveAction:
+period:day
+mStartDate:2023-10-24
+mEndDate:2023-11-23
+innerStartDate:2023-10-24T00%3A00%3A00.000Z
+innerEndDate:2023-11-23T23%3A59%3A59.999Z
+pageSize:25
+pageNumber:0
+sortName:
+sortOrder:
+advancedChartParams:
+eventTypes:others
+eventTypes:alert
+eventTypes:warning
+eventSources:all
+mstatus:-1
+datasource:-1
+targetEventId:-1
+searchText:",,,500,SSM_SERVER_GATEWAY_SECURITY_EVENTS_SECURITY_EVENTS_MSG_3
+InputValidation-SecurityEventManage-saveChange-Positive,/admin/event/manage/security/saveChange,post,"eventId:286767938290177
+moveAction:
+period:day
+mStartDate:2023-09-17
+mEndDate:2023-10-17
+innerStartDate:2023-09-17T00%3A00%3A00.000Z
+innerEndDate:2023-10-17T23%3A59%3A59.999Z
+mDeadline:2023-10-17
+mstatus:
+eventTypes:alert
+eventTypes:warning
+datasource:
+targetEventId:-1
+action:abnormal
+status:processing
+approver:
+supervisor:
+policy:none
+updateEventType:default",,,200,
+InputValidation-SecurityEventManage-saveChange-Negative,/admin/event/manage/security/saveChange,post,"eventId:28676793829$0177
+moveAction:
+period:day
+mStartDate:2023-09-17
+mEndDate:2023-10-17
+innerStartDate:2023-09-17T00%3A00%3A00.000Z
+innerEndDate:2023-10-17T23%3A59%3A59.999Z
+mDeadline:2023-10-17
+mstatus:
+eventTypes:alert
+eventTypes:warning
+datasource:
+targetEventId:-1
+action:abnormal
+status:processing
+approver:
+supervisor:
+policy:none
+updateEventType:default",,,200,SSM_SERVER_GATEWAY_SECURITY_EVENTS_SECURITY_EVENTS_MSG_4
+InputValidation-SecurityEventManage-handlingBatchSave-Positive,/admin/event/manage/security/handlingBatchSave,post,"advancedChartParams:
+datasource:-1
+mstatus:-1
+targetEventId:-1
+filterStatus:All
+pagenation:25
+moveAction:
+period:day
+mStartDate:2023-09-17
+mEndDate:2023-10-17
+innerStartDate:2023-09-17T00%3A00%3A00.000Z
+innerEndDate:2023-10-17T23%3A59%3A59.999Z
+mDeadline:2023-10-17
+pageSize:25
+pageNumber:0
+eventTypes:alert
+eventTypes:warning
+supervisor:
+approver:
+action:abnormal
+status:processing
+policy:none
+updateEventType:default",,,200,
+InputValidation-SecurityEventManage-handlingBatchSave-Negative,/admin/event/manage/security/handlingBatchSave,post,"advancedChartParams:
+datasource:-1
+mstatus:-1
+targetEventId:-1
+filterStatus:All
+pagenation:25
+moveAction:
+period:day
+mStartDate:2023-09-17
+mEndDate:2023-10-17
+innerStartDate:2023-09-17T00%3A00%3A00.000Z
+innerEndDate:2023-10-17T23%3A59%3A59.999Z
+mDeadline:2023-10-17
+pageSize:25
+pageNumber:0
+eventTypes:alert
+eventTypes:warning
+supervisor:123456789012345678901234567890123456789012345678901
+approver:
+action:abnormal
+status:processing
+policy:none
+updateEventType:default",,,200,SSM_SERVER_GATEWAY_SECURITY_EVENTS_SECURITY_EVENTS_MSG_5
+InputValidation-SecurityEventManage-advanceHandlingBatchSave-Positive,/admin/event/manage/security/advanceHandlingBatchSave,post,"advancedChartParams:
+search-name:eventType
+search-operator:is
+pagenation:25
+moveAction:
+period:day
+mStartDate:2023-09-17
+mEndDate:2023-10-17
+innerStartDate:2023-09-17T00%3A00%3A00.000Z
+innerEndDate:2023-10-17T23%3A59%3A59.999Z
+mDeadline:2023-10-17
+pageSize:25
+pageNumber:0
+eventTypes:alert
+eventTypes:warning
+supervisor:
+approver:
+action:abnormal
+status:processing
+policy:none
+updateEventType:default",,,200,
+InputValidation-SecurityEventManage-advanceHandlingBatchSave-Negative,/admin/event/manage/security/advanceHandlingBatchSave,post,"advancedChartParams:
+search-name:eventType
+search-operator:is
+pagenation:25
+moveAction:
+period:day
+mStartDate:2023-09-17
+mEndDate:2023-10-17
+innerStartDate:2023-09-17T00%3A00%3A00.000Z
+innerEndDate:2023-10-17T23%3A59%3A59.999Z
+mDeadline:2023-10-17
+pageSize:25
+pageNumber:0
+eventTypes:alert
+eventTypes:warning
+supervisor:
+approver:123456789012345678901234567890123456789012345678901
+action:abnormal
+status:processing
+policy:none
+updateEventType:default?",,,200,SSM_SERVER_GATEWAY_SECURITY_EVENTS_SECURITY_EVENTS_MSG_6
+InputValidation-SecurityEventManage-getLogs-Positive,/admin/event/manage/security/logs,get,eventId:286788213328384,,,500,
+InputValidation-SecurityEventManage-getLogs-Negative,/admin/event/manage/security/logs,get,"eventId:286788,213328384",,,200,SSM_SERVER_GATEWAY_SECURITY_EVENTS_SECURITY_EVENTS_MSG_7
+InputValidation-SecurityEventManage-revokeChange-Positive,/admin/event/manage/security/revokeChange,post,,form,"eventId: 286767938290177
+moveAction: 
+period: day
+mStartDate: 2023-09-17
+mEndDate: 2023-10-17
+innerStartDate: 2023-09-17T00:00:00.000Z
+innerEndDate: 2023-10-17T23:59:59.999Z
+pageSize: 25
+pageNumber: 0
+mstatus: 
+advancedChartParams: 
+eventTypes: alert
+eventTypes: warning
+datasource: 
+targetEventId: -1",200,
+InputValidation-SecurityEventManage-revokeChange-Negative,/admin/event/manage/security/revokeChange,post,,form,"eventId: 28676793 8290177
+moveAction: 
+period: day
+mStartDate: 2023-09-17
+mEndDate: 2023-10-17
+innerStartDate: 2023-09-17T00:00:00.000Z
+innerEndDate: 2023-10-17T23:59:59.999Z
+pageSize: 25
+pageNumber: 0
+mstatus: 
+advancedChartParams: 
+eventTypes: alert
+eventTypes: warning
+datasource: 
+targetEventId: -1",200,SSM_SERVER_GATEWAY_SECURITY_EVENTS_SECURITY_EVENTS_MSG_8
+InputValidation-SecurityEventManage-advanceRevokeChange-Positive,/admin/event/manage/security/advanceRevokeChange,post,,form,"eventId: 286788213328384
+moveAction: 
+period: day
+mStartDate: 2023-09-17
+mEndDate: 2023-10-17
+innerStartDate: 2023-09-17T00:00:00.000Z
+innerEndDate: 2023-10-17T23:59:59.999Z
+pageSize: 25
+pageNumber: 0
+mstatus: 
+advancedChartParams: {""sortName"":"""",""sortOrder"":"""",""pageNumber"":0,""pageSize"":25,""searchParams"":[]}
+eventTypes: alert
+eventTypes: warning
+datasource: 
+targetEventId: -1",200,
+InputValidation-SecurityEventManage-advanceRevokeChange-Negative,/admin/event/manage/security/advanceRevokeChange,post,,form,"eventId: 28678821r3328384
+moveAction: 
+period: day
+mStartDate: 2023-09-17
+mEndDate: 2023-10-17
+innerStartDate: 2023-09-17T00:00:00.000Z
+innerEndDate: 2023-10-17T23:59:59.999Z
+pageSize: 25
+pageNumber: 0
+mstatus: 
+advancedChartParams: {""sortName"":"""",""sortOrder"":"""",""pageNumber"":0,""pageSize"":25,""searchParams"":[]}
+eventTypes: alert
+eventTypes: warning
+datasource: 
+targetEventId: -1",200,SSM_SERVER_GATEWAY_SECURITY_EVENTS_SECURITY_EVENTS_MSG_9
+InputValidation-LogSearch -list-Positive,/admin/log/search/list,get,"datasource: -1
+pageNumber: 0
+pageSize: 25
+sortName: 
+sortOrder: 
+mStartDate: 2024-04-17 00:00:00
+mEndDate: 2024-04-19 15:03:35
+searchField: 
+searchText: Windows
+col_logsearch_collecttime: on
+col_logsearch_runtime: on
+col_logsearch_ip: on
+col_logsearch_system: on
+col_logsearch_host: on
+col_logsearch_level: on
+col_logsearch_type: on
+col_logsearch_logfile: on
+col_logsearch_msg: on
+col_logsearch_action: on",,,200,
+InputValidation-LogSearch -list-Negative,/admin/log/search/list,get,"datasource: -1
+pageNumber: 0
+pageSize: 25
+sortName: 
+sortOrder: 
+mStartDate: 2024-04-17 00:00:00
+mEndDate: 2024-04-z 15:03:35
+searchField: 
+searchText: Windows
+col_logsearch_collecttime: on
+col_logsearch_runtime: on
+col_logsearch_ip: on
+col_logsearch_system: on
+col_logsearch_host: on
+col_logsearch_level: on
+col_logsearch_type: on
+col_logsearch_logfile: on
+col_logsearch_msg: on
+col_logsearch_action: on",,,400,
+InputValidation-LogSearch -advancedSearch-Positive,/admin/log/search/advanced-search,post,,form,"params:{""page"":{""index"":0,""size"":25,""sort"":null},""filter"":[{""deleteId"":""75b0c35e-5775-e3da-2cdb-a2d6f869b70a"",""key"":""col_logsearch_msg"",""keyLabel"":""Message"",""operator"":""CONTAIN"",""operatorLabel"":""contains"",""value"":""failure""}]}",200,
+InputValidation-LogSearch -advancedSearch-Negative,/admin/log/search/advanced-search,post,,form,"params:{""page"":{""index"":0,""size"":25,""sort"":null},""filter"":[{""deleteId"":""75b0c3+5e-5775-e3da-2cdb-a2d6f869b70a"",""key"":""col_logsearch_msg"",""keyLabel"":""Message"",""operator"":""CONTAIN"",""operatorLabel"":""contains"",""value"":""failure""}]}",200,SSM_SERVER_GATEWAY_SECURITY_LOG_MSG_4
+InputValidation-Report-exportReport-Positive,/admin/report/export/file,get,"mStartDate:2023-12-12
+mEndDate:2023-12-12",,,200,
+InputValidation-Report-exportReport-Negative,/admin/report/export/file,get,"mStartDate:2023-12-12
+mEndDate:2023-12-12asd",,,200,SSM_SERVER_GATEWAY_SYSTEM_CONFIGURATION_NETWORK_MSG_FRAME_1
+InputValidation-User-list-Positive,/admin/user/list,get,"pageSize:25
+pageNumber:0
+sortName:
+sortOrder:
+searchText:admin",,,200,
+InputValidation-User-list-Negative,/admin/user/list,get,"pageSize: 25
+pageNumber: 0
+sortName: 
+sortOrder: 
+searchText:12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901",,,400,
+InputValidation-User-form-Positive,/admin/user/form,get,"id:286793991627264
+view:true",,,200,
+InputValidation-User-form-Negative,/admin/user/form,get,"id:2867939916p27264
+view:true",,,400,
+InputValidation-User-delete-Positive,/admin/user/delete,post,,form,id:286793991627264,200,
+InputValidation-User-delete-Negative,/admin/user/delete,post,,form,id:2867$93991627264,400,
+InputValidation-User-deleteAll-Positive,/admin/user/deleteAll,post,,form,"ids: 286793724486144,286793822325248",200,
+InputValidation-User-deleteAll-Negative,/admin/user/deleteAll,post,,form,"ids: 28679!@#3724486144,2867938223asd25248",200,SSM_SERVER_GATEWAY_USER_DELETE_MSG
+InputValidation-User-save-Positive,/admin/user/save,post,,form,"id: 
+view: false
+nickName: 2
+oldLoginName: 
+userName: 2
+inputPassword: Passw0rd@123
+repeatPassword: Passw0rd@123
+email: 
+depart: 
+description: 
+roleIds: 1
+mode: 1",200,
+InputValidation-User-save-Negative,/admin/user/save,post,,form,"id:
+view: false
+nickName: 3
+oldLoginName: 
+userName: 3
+inputPassword: Passw0rd
+repeatPassword: Passw0rd
+email: 
+depart: 
+description: 
+roleIds: 1
+mode: 1",200,SSM_SERVER_GATEWAY_USER_SAVE_MSG
+InputValidation-Role-list-Positive,/admin/role/list,get,"pageSize: 25
+pageNumber: 0
+searchText: Administrator",,,200,
+InputValidation-Role-list-Negative,/admin/role/list,get,"pageSize: 25
+pageNumber: 0
+searchText:12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901",,,400,
+InputValidation-Role-form-Positive,/admin/role/form,get,id:1,,,200,
+InputValidation-Role-form-Negative,/admin/role/form,get,id:1a,,,400,
+InputValidation-Role-delete-Positive,/admin/role/delete,post,,form,id:286795194425856,200,
+InputValidation-Role-delete-Negative,/admin/role/delete,post,,form,id:28679519ff4425856,400,
+InputValidation-Role-deleteAll-Positive,/admin/role/deleteAll,post,,form,"ids: 286794708654592,286795015557632",200,
+InputValidation-Role-deleteAll-Negative,/admin/role/deleteAll,post,,form,"ids: 2867947sdf08654592,28679^5015557632",200,SSM_SERVER_GATEWAY_ROLE_DELETE_MSG
+InputValidation-Role-save-Positive,/admin/role/save,post,,form,"id:
+view:false
+resourceIds:
+oldName:
+name:zjiang test
+description:",200,
+InputValidation-Role-save-Negative,/admin/role/save,post,,form,"id:
+view:false
+resourceIds:qwer
+oldName:
+name:zjiang test
+description:",200,SSM_SERVER_GATEWAY_ROLE_SAVE_MSG
+InputValidation-SystemConfig-saveSystemTime-Positive,/admin/config/system/saveSystemTime,post,,form,ntpServer: 127.127.1.0,200,
+InputValidation-SystemConfig-saveSystemTime-Negative,/admin/config/system/saveSystemTime,post,,form,ntpServer: 10.11.105.999,200,SSM_SERVER_GATEWAY_SYSTEM_CONFIGURATION_NTP_SERVER_MSG_FRAME_1
+InputValidation-SystemConfig-saveSystemNetwork-Positive,/admin/config/system/network/server,post,,json,"[{""id"":""eno12429"",""name"":""eno12429"",""ip"":"""",""gateway"":"""",""mask"":"""",""up"":false,""mirrorNic"":true,""mainNic"":false},{""id"":""eno12419"",""name"":""eno12419"",""ip"":"""",""gateway"":"""",""mask"":"""",""up"":false,""mirrorNic"":true,""mainNic"":false},{""id"":""eno12409"",""name"":""eno12409"",""ip"":"""",""gateway"":"""",""mask"":"""",""up"":false,""mirrorNic"":true,""mainNic"":false},{""id"":""eno12399"",""name"":""eno12399"",""ip"":""10.11.60.246"",""gateway"":""10.11.60.254"",""mask"":""255.255.255.0"",""up"":true,""mirrorNic"":false,""mainNic"":true},{""id"":""eno8403"",""name"":""eno8403"",""ip"":"""",""gateway"":"""",""mask"":"""",""up"":false,""mirrorNic"":true,""mainNic"":false},{""id"":""eno8303"",""name"":""eno8303"",""ip"":"""",""gateway"":"""",""mask"":"""",""up"":false,""mirrorNic"":true,""mainNic"":false}]",200,
+InputValidation-SystemConfig-saveSystemNetwork-Negative,/admin/config/system/network/server,post,,json,"[{""id"":""eno12429"",""name"":""eno12429"",""ip"":"""",""gateway"":"""",""mask"":"""",""up"":false,""mirrorNic"":true,""mainNic"":false},{""id"":""eno12419"",""name"":""eno12419"",""ip"":"""",""gateway"":"""",""mask"":"""",""up"":false,""mirrorNic"":true,""mainNic"":false},{""id"":""eno12409"",""name"":""eno12409"",""ip"":"""",""gateway"":"""",""mask"":"""",""up"":false,""mirrorNic"":true,""mainNic"":false},{""id"":""eno12399"",""name"":""eno12399"",""ip"":""10.11.60.246"",""gateway"":""10.11.60.999"",""mask"":""255.255.255.0"",""up"":true,""mirrorNic"":false,""mainNic"":true},{""id"":""eno8403"",""name"":""eno8403"",""ip"":"""",""gateway"":"""",""mask"":"""",""up"":false,""mirrorNic"":true,""mainNic"":false},{""id"":""eno8303"",""name"":""eno8303"",""ip"":"""",""gateway"":"""",""mask"":"""",""up"":false,""mirrorNic"":true,""mainNic"":false}]",500,SSM_SERVER_GATEWAY_CONFIG_NETWORK_MSG
+InputValidation-SystemConfig-saveAccessIPArea-Positive,/admin/config/system/saveAccessIPArea,post,,form,address:10.11.0.0/16,200,
+InputValidation-SystemConfig-saveAccessIPArea-Negative,/admin/config/system/saveAccessIPArea,post,,form,address:10.999.0.0/16,200,SSM_SERVER_GATEWAY_SYSTEM_CONFIGURATION_ACCESS_IP_MSG_FRAME_1
+InputValidation-SystemConfig-saveBackupPlan-Positive,/admin/config/system/saveBackupPlan,post,,form,"originalDataCheck: NO
+securityDataCheck: YES
+systemConfigurationCheck: YES
+remoteCheck: NO
+securityData: on
+systemConfiguration: on
+plan: WEEK
+cycleWeek: 7
+cycleHour: 10
+cycleMinute: 12
+cycleSecond: 00
+backUpPemFileText:",200,
+InputValidation-SystemConfig-saveBackupPlan-Negative,/admin/config/system/saveBackupPlan,post,,form,"originalDataCheck: NO
+securityDataCheck: YES
+systemConfigurationCheck: YES
+remoteCheck: NO
+securityData: on
+systemConfiguration: on
+plan: WEEEK
+cycleWeek: 7
+cycleHour: 10
+cycleMinute: 12
+cycleSecond: 00
+backUpPemFileText:",200,SSM_SERVER_GATEWAY_CONFIGURATION_SYSTEM_MSG_3
+InputValidation-SystemConfig-saveMailService-Positive,/admin/config/system/saveMailService,post,,form,"templateJson: {""report"":{""emailAddress"":""osamonitor@szcdc01.siemens.com"",""emailSubject"":""zj test"",""emailText"":""zj text""},""notification"":{""emailAddress"":""osamonitor@szcdc01.siemens.com"",""emailSubject"":""zj test"",""emailText"":""zj text""}}
+isSslEnabledCheck: NO
+isServerAuthEnabledCheck: 
+serverHost: 10.11.105.207
+serverPort: 25
+emailUser: osamonitor@szcdc01.siemens.com
+emailPassword: fW2W456P&4
+crtFileText: 
+file: 
+emailAddress0: osamonitor@szcdc01.siemens.com
+emailSubject0: zj test
+emailText0: zj text
+emailAddress1: osamonitor@szcdc01.siemens.com
+emailSubject1: zj test
+emailText1: zj text",200,
+InputValidation-SystemConfig-saveMailService-Negative,/admin/config/system/saveMailService,post,,form,"templateJson: {""report"":{""emailAddress"":""osamonitor@szcdc01.siemens.com"",""emailSubject"":""zj test"",""emailText"":""zj text""},""notification"":{""emailAddress"":""osamonitor@szcdc01.siemens.com"",""emailSubject"":""zj test"",""emailText"":""zj text""}}
+isSslEnabledCheck: NO
+isServerAuthEnabledCheck: 
+serverHost:
+serverPort: 25
+emailUser: osamonitor@szcdc01.siemens.com
+emailPassword: fW2W456P&4
+crtFileText: 
+file: 
+emailAddress0: osamonitor@szcdc01.siemens.com
+emailSubject0: zj test
+emailText0: zj text
+emailAddress1: osamonitor@szcdc01.siemens.com
+emailSubject1: zj test
+emailText1: zj text",200,SSM_SERVER_GATEWAY_CONFIGURATION_SYSTEM_MSG_1
+InputValidation-SystemConfig-saveWorkMode-Positive,/admin/config/system/saveWorkMode,post,,form,modeType:operationalMode,200,
+InputValidation-SystemConfig-saveWorkMode-Negative,/admin/config/system/saveWorkMode,post,,form,modeType:operational Mode,200,SSM_SERVER_GATEWAY_CONFIGURATION_SYSTEM_MSG_6
+InputValidation-LogDataSource-form-Positive,/admin/log/datasource/form,get,"id: 
+view: true
+sensor: null",,,200,
+InputValidation-LogDataSource-form-Negative,/admin/log/datasource/form,get,"id: 12123
+view: true
+sensor: null",,,500,SSM_SERVER_GATEWAY_DATA_SOURCE_MSG_2
+InputValidation-LogDataSource-save-Positive,/admin/log/datasource/save,post,,form,"id: 
+view: false
+sensor: null
+clientCaName: 
+mode: noAgent
+name: zjiang test
+oldName: 
+collectorId: 
+ip: 10.99.99.99
+system: Windows
+protocol: TLS
+securityGrade: 5
+tlsClientCA: 
+port: 514
+device: General
+logagentDestination: 10.11.60.234",200,
+InputValidation-LogDataSource-save-Negative,/admin/log/datasource/save,post,,form,"id: 
+view: false
+sensor: null
+clientCaName: 
+mode: noAgent
+name: zjiang test
+oldName: 
+collectorId: 
+ip: 10d
+system: Windows
+protocol: TLS
+securityGrade: 5
+tlsClientCA: 
+port: 514
+device: General
+logagentDestination: 10.11.60.234",200,SSM_SERVER_GATEWAY_DATA_SOURCE_MSG_3
+InputValidation-LogDataSourceSelfMonitor-status-Positive,/admin/log/datasourceselfmonitor/status,get,collectorId:E3060500FFFBEBBFR6952245,,,200,
+InputValidation-LogDataSourceSelfMonitor-status-Negative,/admin/log/datasourceselfmonitor/status,get,collectorId:,,,200,SSM_SERVER_GATEWAY_SELF_MONITOR_MSG_2
+InputValidation-LogConfig-saveLogStorageConfig-Positive,/admin/log/config/saveLogStorageConfig,post,,form,"storagePeriod: 180
+maxStorageThreshold: 80
+alarmStorageThreshold: 60",200,
+InputValidation-LogConfig-saveLogStorageConfig-Negative,/admin/log/config/saveLogStorageConfig,post,,form,"storagePeriod: 180
+maxStorageThreshold: 110
+alarmStorageThreshold: 60",200,SSM_SERVER_GATEWAY_LOG_CONFIG_MSG_2
+InputValidation-LogConfig-saveLogForward-Positive,/admin/log/config/saveLogForward,post,,form,"forwardServerCaName: 
+ip: 192.168.0.1
+port: 9000
+forwardProtocol: tcp
+rfc: rfc5424
+enableForwardEvent: on",200,
+InputValidation-LogConfig-saveLogForward-Negative,/admin/log/config/saveLogForward,post,,form,"forwardServerCaName: 
+ip: 192.168.0.1d
+port: 9000
+forwardProtocol: tcp
+rfc: rfc5424
+enableForwardEvent: on",200,SSM_SERVER_GATEWAY_LOG_CONFIG_MSG_1
+InputValidation-LogConfig-saveLogReceiveConfig-Positive,/admin/log/config/saveLogReceiveConfig,post,,form,"receivePort: 514, 6514",200,
+InputValidation-LogConfig-saveLogReceiveConfig-Negative,/admin/log/config/saveLogReceiveConfig,post,,form,receivePort: 9000,200,SSM_SERVER_GATEWAY_LOG_CONFIG_MSG_3
+InputValidation-Notification-save-Positive,/admin/notification/save,post,,form,"cat: system_event
+ids: 9001,9002,9004,9005,9006,9007,9008,9009,9010,
+methods: notification_config_notify_sound;,notification_config_notify_email;,notification_config_notify_email;,notification_config_notify_email;,notification_config_notify_email;,notification_config_notify_email;,notification_config_notify_email;,notification_config_notify_email;,notification_config_notify_email;,
+messages: a 9001 event,,,,,,,,,
+messageContent: a 9001 event
+messageContent: 
+messageContent: 
+messageContent: 
+messageContent: 
+messageContent: 
+messageContent: 
+messageContent: 
+messageContent:
+securityPageNumber:0
+securityPageSize:25",200,
+InputValidation-Notification-save-Negative,/admin/notification/save,post,,form,"cat:
+ids: 9001,9002,9004,9005,9006,9007,9008,9009,9010,
+methods: notification_config_notify_sound;,notification_config_notify_email;,notification_config_notify_email;,notification_config_notify_email;,notification_config_notify_email;,notification_config_notify_email;,notification_config_notify_email;,notification_config_notify_email;,notification_config_notify_email;,
+messages: a 9001 event,,,,,,,,,
+messageContent: a 9001 event
+messageContent: 
+messageContent: 
+messageContent: 
+messageContent: 
+messageContent: 
+messageContent: 
+messageContent: 
+messageContent:
+securityPageNumber:0
+securityPageSize:25",200,SSM_SERVER_GATEWAY_CONFIGURATION_NOTIFICATIONS_MSG_2
+InputValidation-SecurityEventRules-save-Positive,/admin/event/manage/rules/save,post,,form,"id: 
+view: false
+eventId: 1001
+name: WannaCry Process
+eventType: alert
+remarks: WannaCry encryptiong process is detected on host {dataSrcIP}
+threshold: 1
+timeWindow: 30000
+script: {""query"": {""bool"": {""must"": [{""range"":{""@timestamp"":{""gt"":""<bt>"",""lt"":""<et>""}}},{""exists"": {""field"": ""s_commandLine""}},{""exists"": {""field"": ""s_image""}}]}},""size"": 100}",200,
+InputValidation-SecurityEventRules-save-Negative,/admin/event/manage/rules/save,post,,form,"id: 
+view: false
+eventId: 1001
+name: WannaCry Process
+eventType: test
+remarks: WannaCry encryptiong process is detected on host {dataSrcIP}
+threshold: 1
+timeWindow: 30000
+script: {""query"": {""bool"": {""must"": [{""range"":{""@timestamp"":{""gt"":""<bt>"",""lt"":""<et>""}}},{""exists"": {""field"": ""s_commandLine""}},{""exists"": {""field"": ""s_image""}}]}},""size"": 100}",200,SSM_SERVER_GATEWAY_CONFIGURATION_CORRELATION_RULES_MSG_4
+InputValidation-SecurityEventRules-enableSel-Positive,/admin/event/manage/rules/enableSel,post,,form,ids: 293516511296094,200,
+InputValidation-SecurityEventRules-enableSel-Negative,/admin/event/manage/rules/enableSel,post,,form,ids: 2935165&11296094,200,SSM_SERVER_GATEWAY_CONFIGURATION_CORRELATION_RULES_MSG_1
+InputValidation-SecurityEventRules-disableSel-Positive,/admin/event/manage/rules/disableSel,post,,form,ids:293516511296094,200,
+InputValidation-SecurityEventRules-disableSel-Negative,/admin/event/manage/rules/disableSel,post,,form,ids:293516o511296094,200,SSM_SERVER_GATEWAY_CONFIGURATION_CORRELATION_RULES_MSG_2
+InputValidation-SecurityEventRules-deleteAll-Positive,/admin/event/manage/rules/deleteSel,post,,form,ids:285913234813552,200,
+InputValidation-SecurityEventRules-deleteAll-Negative,/admin/event/manage/rules/deleteSel,post,,form,ids:,200,SSM_SERVER_GATEWAY_CONFIGURATION_CORRELATION_RULES_MSG_3
+InputValidation-ReportConfig-saveConfig-Positive,/admin/config/report/saveConfig,post,,form,"companyName: Siemens Mobility GmbH
+reportCycle: weekly
+enableAutoSendEmailWithReportCycle: true
+language: en
+storeCycle: 180
+contactName: Siemens Mobility GmbH
+contactDepartment: Siemens Mobility GmbH
+contactPhone: +49 (531) 6988 6988
+contactEmail: osa-support.smo@siemens.com",200,
+InputValidation-ReportConfig-saveConfig-Negative,/admin/config/report/saveConfig,post,,form,"companyName: Siemens Mobility GmbH
+reportCycle: weekly
+enableAutoSendEmailWithReportCycle: true
+language: ene
+storeCycle: 180
+contactName: Siemens Mobility GmbH
+contactDepartment: Siemens Mobility GmbH
+contactPhone: 
+contactEmail: osa-support.smo@siemens.com",200,SSM_SERVER_GATEWAY_REPORT_CONFIGURATION_LANGUAGE_MSG_FRAME_1
+InputValidation-AssetTypeConfig-form-Positive,/admin/config/assetType/form,get,"id:14
+view: true
+type: test
+zone: Operations %26 Control",,,200,
+InputValidation-AssetTypeConfig-form-Negative,/admin/config/assetType/form,get,"id: 0
+view: true
+type: test
+zone: Operations %26 Control",,,500,SSM_SERVER_GATEWAY_ASSET_TYPE_MSG_FORM
+InputValidation-AssetTypeConfig-save-Positive,/admin/config/assetType/save,post,,form,"id: 
+view: false
+type: test1
+zone: Operations & Control",200,
+InputValidation-AssetTypeConfig-save-Negative,/admin/config/assetType/save,post,,form,"id: 
+view: false
+type: 123456789012345678901234567890123456789012345678901
+zone: Operations & Control",200,SSM_SERVER_GATEWAY_ASSET_TYPE_MSG_SAVE
+InputValidation-AssetTypeConfig-deleteAll-Positive,/admin/config/assetType/deleteAll,post,,form,ids: 288003748049408,200,
+InputValidation-AssetTypeConfig-deleteAll-Negative,/admin/config/assetType/deleteAll,post,,form,ids: 28800374.8049408,200,SSM_SERVER_GATEWAY_ASSET_TYPE_MSG_DELETE
+InputValidation-AssetZoneConfig-deleteAll-Positive,/admin/config/assetZone/deleteAll,post,,form,ids: 287121276928512,200,
+InputValidation-AssetZoneConfig-deleteAll-Negative,/admin/config/assetZone/deleteAll,post,,form,ids: 2871212769.28512,200,SSM_SERVER_GATEWAY_CONFIGURATION_ASSET_SETTING_ZONE_MSG_2
+InputValidation-LogAgentUpdate-deleteAll-Positive,/admin/agent/update/deleteAll,post,,form,"ids: 287168993565184
+pageNumber: 
+pageSize: ",200,
+InputValidation-LogAgentUpdate-deleteAll-Negative,/admin/agent/update/deleteAll,post,,form,"ids: 
+pageNumber: 
+pageSize: ",500,SSM_SERVER_GATEWAY_AGENT_UPDATE_MSG_4
+InputValidation-LogAgentUpdate-openSelectToUpgrade-Positive,/admin/agent/update/openSelectToUpgrade,get,"packageId:293154867638784
+pageNumber:0
+pageSize:25",,,200,
+InputValidation-LogAgentUpdate-openSelectToUpgrade-Negative,/admin/agent/update/openSelectToUpgrade,get,"packageId:293154867638784
+pageNumber:0
+pageSize:25",,,200,SSM_SERVER_GATEWAY_AGENT_UPDATE_MSG_6
+InputValidation-LogAgentUpdate-openInstallHistory-Positive,/admin/agent/update/openInstallHistory,get,"pageSize: 25
+pageNumber: 0
+packageId: 293154792778240
+collectorId: 
+searchText:",,,200,
+InputValidation-LogAgentUpdate-openInstallHistory-Negative,/admin/agent/update/openInstallHistory,get,"pageSize: 25
+pageNumber: 0
+packageId: 
+collectorId: 
+searchText:",,,200,SSM_SERVER_GATEWAY_AGENT_UPDATE_MSG_7
+InputValidation-LogAgentUpdate-download-Positive,/admin/agent/update/download,post,,form,"ids: 287168993565184
+pageNumber: 
+pageSize: ",200,
+InputValidation-LogAgentUpdate-download-Negative,/admin/agent/update/download,post,,form,"ids: 
+pageNumber: 
+pageSize: ",200,SSM_SERVER_GATEWAY_AGENT_UPDATE_MSG_5
+InputValidation-AuditLog-index-Positive,/admin/event/auditlog/index,post,,form,"pageSize:25
+pageNumber:0
+mStartDate:2023-11-22
+mEndDate:2023-11-30
+sortName:createTime
+sortOrder:desc
+searchText:failed",200,
+InputValidation-AuditLog-index-Negative,/admin/event/auditlog/index,post,,form,"pageSize:25
+pageNumber:0
+mStartDate:2023-11-22
+mEndDate:2023-11-32
+sortName:createTime
+sortOrder:desc
+searchText:failed",400,
+InputValidation-AuditLog-download-Positive,/admin/event/auditlog/download,post,,form,"pageSize:25
+pageNumber:0
+mStartDate:2023-10-31
+mEndDate:2023-11-30
+sortName:createTime
+sortOrder:desc
+searchText:",200,
+InputValidation-AuditLog-download-Negative,/admin/event/auditlog/download,post,,form,"pageSize:25
+pageNumber:0
+mStartDate:2023-10-31
+mEndDate:2023-11
+sortName:createTime
+sortOrder:desc
+searchText:",400,
+InputValidation-DataBackupList-restoreBackupFile-Positive,/admin/config/backupList/restoreBackupFile,post,,form,fileName:system_configuration_20231024.tar,200,
+InputValidation-DataBackupList-restoreBackupFile-Negative,/admin/config/backupList/restoreBackupFile,post,,form,fileName:test_20231024.tar,200,SSM_SERVER_GATEWAY_DATA_BACKUP_LIST_MSG_1
+InputValidation-Diagnostic-queryServerNode-Positive,/admin/diagnostic/server/node,get,hostId:e0c1a4b1895e4612a69cb9350bd6ed8c,,,200,
+InputValidation-Diagnostic-queryServerNode-Negative,/admin/diagnostic/server/node,get,hostId:,,,200,SSM_SERVER_GATEWAY_DIAGNOSTIC_MSG_1
+InputValidation-Diagnostic-downloadServerNodeLog-Positive,/admin/diagnostic/log/server/node,get,hostId:894aeb784d524d7bb4d4eb56a28e3115,,,200,
+InputValidation-Diagnostic-downloadServerNodeLog-Negative,/admin/diagnostic/log/server/node,get,hostId:,,,500,SSM_SERVER_GATEWAY_DIAGNOSTIC_MSG_2
+InputValidation-Diagnostic-sensorNode-Positive,/admin/diagnostic/sensor/node,get,hostId:72060900FFFBEBBFHVZSFV3,,,500,
+InputValidation-Diagnostic-sensorNode-Negative,/admin/diagnostic/sensor/node,get,hostId:,,,500,SSM_SERVER_GATEWAY_DIAGNOSTIC_MSG_3
+InputValidation-Diagnostic-downloadSensorNodeLog-Positive,/admin/diagnostic/log/sensor/node,get,hostId:72060900FFFBEBBFHVZSFV3,,,200,
+InputValidation-Diagnostic-downloadSensorNodeLog-Negative,/admin/diagnostic/log/sensor/node,get,hostId:,,,500,SSM_SERVER_GATEWAY_DIAGNOSTIC_MSG_4
+InputValidation-Diagnostic-sensorServiceProber-Positive,/admin/diagnostic/sensor/service/prober,get,hostId:72060900FFFBEBBFHVZSFV3,,,200,
+InputValidation-Diagnostic-sensorServiceProber-Negative,/admin/diagnostic/sensor/service/prober,get,hostId:,,,200,SSM_SERVER_GATEWAY_DIAGNOSTIC_MSG_5
+InputValidation-Diagnostic-downloadSensorProberLog-Positive,/admin/diagnostic/log/sensor/service/prober,get,hostId:72060900FFFBEBBFHVZSFV3,,,200,
+InputValidation-Diagnostic-downloadSensorProberLog-Negative,/admin/diagnostic/log/sensor/service/prober,get,hostId:,,,500,SSM_SERVER_GATEWAY_DIAGNOSTIC_MSG_6
+InputValidation-Diagnostic-sensorServiceZeek-Positive,/admin/diagnostic/sensor/service/zeek,get,hostId:72060900FFFBEBBFHVZSFV3,,,200,
+InputValidation-Diagnostic-sensorServiceZeek-Negative,/admin/diagnostic/sensor/service/zeek,get,hostId:,,,200,SSM_SERVER_GATEWAY_DIAGNOSTIC_MSG_7
+InputValidation-Diagnostic-downloadSensorZeekLog-Positive,/admin/diagnostic/log/sensor/service/zeek,get,hostId:72060900FFFBEBBFHVZSFV3,,,200,
+InputValidation-Diagnostic-downloadSensorZeekLog-Negative,/admin/diagnostic/log/sensor/service/zeek,get,hostId:,,,500,SSM_SERVER_GATEWAY_DIAGNOSTIC_MSG_8
+InputValidation-Diagnostic-sensorServiceLogAgent-Positive,/admin/diagnostic/sensor/service/logAgent,get,hostId:72060900FFFBEBBFHVZSFV3,,,200,
+InputValidation-Diagnostic-sensorServiceLogAgent-Negative,/admin/diagnostic/sensor/service/logAgent,get,hostId:,,,200,SSM_SERVER_GATEWAY_DIAGNOSTIC_MSG_9
+InputValidation-Diagnostic-downloadSensorLogAgent-Positive,/admin/diagnostic/log/sensor/service/logAgent,get,hostId:72060900FFFBEBBFHVZSFV3,,,200,
+InputValidation-Diagnostic-downloadSensorLogAgent-Negative,/admin/diagnostic/log/sensor/service/logAgent,get,hostId:,,,500,SSM_SERVER_GATEWAY_DIAGNOSTIC_MSG_10
+InputValidation-Diagnostic-sensorServiceSuricata-Positive,/admin/diagnostic/sensor/service/suricata,get,hostId:72060900FFFBEBBFHVZSFV3,,,200,
+InputValidation-Diagnostic-sensorServiceSuricata-Negative,/admin/diagnostic/sensor/service/suricata,get,hostId:,,,200,SSM_SERVER_GATEWAY_DIAGNOSTIC_MSG_11
+InputValidation-Diagnostic-downloadSensorSuricataLog-Positive,/admin/diagnostic/log/sensor/service/suricata,get,hostId:72060900FFFBEBBFHVZSFV3,,,200,
+InputValidation-Diagnostic-downloadSensorSuricataLog-Negative,/admin/diagnostic/log/sensor/service/suricata,get,hostId:,,,500,SSM_SERVER_GATEWAY_DIAGNOSTIC_MSG_12
+InputValidation-PackageCapture-capture-Positive,/admin/log/packetcapture/capture,post,"sensorIp:10.11.60.132
+timeFrame:1
+maxPacketCount:1
+maxPcapSize:
+filter:
+mode:only_once
+taskControl:run",,,200,
+InputValidation-PackageCapture-capture-Negative,/admin/log/packetcapture/capture,post,"sensorIp:10.11.60.q
+timeFrame:1
+maxPacketCount:1
+maxPcapSize:
+filter:
+mode:only_once
+taskControl:run",,,200,SSM_SERVER_GATEWAY_PACKET_CAPTURE_MSG_4
+InputValidation-License-uploadNew-Positive,/admin/license/upload,post,,form,,500,
+InputValidation-License-uploadNew-Negative,/admin/license/upload,post,,form,,200,SSM_SERVER_GATEWAY_LICENSE_MSG_1
+InputValidation-admin-saveChangePassword-Positive,/admin/saveChangePassword,post,,form,,200,
+InputValidation-admin-saveChangePassword-Negative,/admin/saveChangePassword,post,,form,"originalPassword: Passw0rd@123
+newPassword: Passw0rd
+repeatPassword: Passw0rd",200,SSM_SERVER_GATEWAY_ADMIN_EDIT_MSG
+InputValidation-DashboardNetwokStatics-topProtocols-Positive,/admin/dashboard/network/topProtocols,get,"legend:
+period:day
+startDate:2023-11-29
+endDate:2023-12-01",,,200,
+InputValidation-DashboardNetwokStatics-topProtocols-Negative,/admin/dashboard/network/topProtocols,get,"legend:
+period:day
+startDate:2023-11-29
+endDate:2023-12-011",,,200,SSM_SERVER_GATEWAY_DASHBOARD_SECURITY_NETWORK_STATISTICS_MSG_2
+InputValidation-DashboardNetwokStatics-topDns-Positive,/admin/dashboard/network/topDns,get,"legend:
+period:day
+startDate:2023-11-08
+endDate:2023-11-09",,,200,
+InputValidation-DashboardNetwokStatics-topDns-Negative,/admin/dashboard/network/topDns,get,"legend:
+period:day
+startDate:2023-11-08
+endDate:23-11-09",,,200,SSM_SERVER_GATEWAY_DASHBOARD_SECURITY_NETWORK_STATISTICS_MSG_3
+InputValidation-DashboardNetwokStatics-topActiveHost-Positive,/admin/dashboard/network/topActiveHost,get,"period:day
+startDate:2023-11-08
+endDate:2023-11-09",,,200,
+InputValidation-DashboardNetwokStatics-topActiveHost-Negative,/admin/dashboard/network/topActiveHost,get,"period:day
+startDate:20231108
+endDate:2023-11-09",,,500,SSM_SERVER_GATEWAY_DASHBOARD_SECURITY_NETWORK_STATISTICS_MSG_4
+InputValidation-DashboardNetwokStatics-eventsBySensors-Positive,/admin/dashboard/network/eventsBySensors,get,"period:day
+startDate:2023-11-08
+endDate:2023-11-09",,,200,
+InputValidation-DashboardNetwokStatics-eventsBySensors-Negative,/admin/dashboard/network/eventsBySensors,get,"period:day
+startDate:2023-11-001
+endDate:2023-11-09",,,200,SSM_SERVER_GATEWAY_DASHBOARD_SECURITY_NETWORK_STATISTICS_MSG_5
+InputValidation-Login-login-Positive,/login,post,"username:admin
+password:Passw0rd@123
+_csrf:{{token}}",,,200,
+InputValidation-Login-login-Negative,/login,post,"username:admin
+password:Passw0rd@1Passw0rd@1Passw0rd@1234
+_csrf:{{token}}",,,200,SSM_SERVER_GATEWAY_LOGIN_MSG_1
